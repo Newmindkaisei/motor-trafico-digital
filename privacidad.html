@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Política de Privacidad de Motor de Tráfico Digital: cómo se recogen, usan y protegen los datos enviados a través de este sitio."
+      content="Política de Privacidad del Directorio de Abogados, de la plataforma Motor de Tráfico Digital Legal: qué datos trata el sitio, para qué los usa y qué opciones tiene usted."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,18 +42,368 @@
         <a class="legal-back" href="./index.html">Volver al inicio</a>
         <p class="eyebrow">Documentos legales</p>
         <h1 class="legal-title">Política de Privacidad</h1>
-        <p class="legal-lead">
-          Este documento describe cómo se recogen, usan y protegen los datos que usted envía a
-          través del formulario de reservas de este sitio.
-        </p>
+        <p class="legal-lead">Última actualización: 22 de octubre de 2026</p>
 
         <div class="legal-body">
-          <!-- PENDIENTE: pegar aquí el texto de la Política de Privacidad. -->
-          <div class="legal-note">
-            <strong>Contenido en preparación</strong>
-            El texto completo de este documento se publicará en esta misma dirección. La fecha
-            de última actualización aparecerá en esta página cuando el documento esté vigente.
-          </div>
+          <p>
+            Esta página explica qué datos trata este directorio, para qué los usa y qué opciones
+            tiene usted. Describe cómo funciona el sitio hoy; cuando algo aún no existe o depende de
+            una decisión pendiente, lo indicamos.
+          </p>
+
+          <h2>Responsable del tratamiento</h2>
+          <p>Traffic Canvass.</p>
+
+          <h2>En resumen</h2>
+          <ul>
+            <li>
+              El sitio no instala cookies ni carga servicios de seguimiento o de publicidad de
+              terceros.
+            </li>
+            <li>
+              «Cerca de mí» usa la ubicación de su dispositivo solo si usted lo pide y su navegador
+              lo permite. Se consulta una vez en el servidor de este sitio, que no la guarda ni la
+              envía a terceros.
+            </li>
+            <li>
+              Contamos visitas y clics en enlaces de contacto como totales por día, sin identificar
+              a nadie. Puede buscar sin compartir su ubicación: elija la provincia y el municipio a
+              mano.
+            </li>
+            <li>Todavía no hay perfiles de abogados publicados.</li>
+          </ul>
+
+          <h2>Qué datos tratamos y para qué</h2>
+          <ul>
+            <li>
+              Ubicación del dispositivo, solo si usa «Cerca de mí»: para identificar su municipio.
+              No se guarda.
+            </li>
+            <li>
+              Provincia, municipio, área de práctica y texto que elige al buscar: para mostrarle
+              resultados. El sitio no guarda las búsquedas.
+            </li>
+            <li>
+              Estadísticas agregadas de páginas vistas, sitio de procedencia y clics de contacto:
+              para saber qué partes del directorio se usan. Solo totales por día.
+            </li>
+            <li>
+              Preguntas al asistente: para responderle con la información publicada. No se guardan.
+            </li>
+            <li>
+              Formulario de reserva de membresía (activo): nombre, correo electrónico, teléfono,
+              provincia, municipio, si es abogado independiente o firma, servicios, idiomas y años
+              de experiencia, para contactarle y coordinar su reserva. Los datos se envían a un
+              servicio de Google (Google Apps Script) y se guardan en una hoja de cálculo privada;
+              el sitio no procesa pagos en línea.
+            </li>
+            <li>
+              Formulario de contacto: todavía no está activo; lo que se envía se comprueba y se
+              descarta.
+            </li>
+            <li>
+              Formulario de registro de abogados: todavía no está activo; lo que se envía se
+              comprueba y se descarta.
+            </li>
+            <li>
+              Formulario de registro de firmas: todavía no está activo; lo que se envía se comprueba
+              y se descarta.
+            </li>
+            <li>
+              Dirección IP: para limitar el número de consultas y evitar abusos. Solo en memoria, por
+              periodos de un minuto.
+            </li>
+            <li>
+              Datos de perfiles que cada abogado o firma suministra para su página pública.
+            </li>
+            <li>
+              Datos de clientes del directorio, para la gestión interna de la relación. No se
+              publican.
+            </li>
+          </ul>
+
+          <h2>Ubicación del dispositivo («Cerca de mí»)</h2>
+          <h3>Cuándo y por qué se pide</h3>
+          <p>
+            El sitio nunca pide su ubicación al cargar una página. Al pulsar «Cerca de mí» se muestra
+            primero una explicación, y solo si después elige «Usar mi ubicación» el sitio la solicita
+            a su navegador. El navegador le pide permiso porque un sitio web solo puede conocer la
+            ubicación de un dispositivo con la autorización de quien lo usa: si usted no la concede,
+            el sitio no la recibe.
+          </p>
+          <p>
+            Cada vez que usa la función se pide una ubicación nueva, sin reutilizar una anterior. Si
+            no llega en 15 segundos, se cancela y puede elegir la ubicación a mano.
+          </p>
+          <h3>Qué se envía y cómo se procesa</h3>
+          <p>
+            Si da permiso, el navegador entrega la latitud, la longitud y el margen de precisión
+            estimado. El sitio envía esos tres valores, una sola vez, a /api/ubicacion, una dirección
+            de su propio servidor. Allí se comparan con los límites municipales guardados en ese
+            mismo servidor (datos de la Oficina Nacional de Estadística publicados por OCHA) para
+            identificar su municipio. Cuando el punto está cerca de un límite, o en una zona cuyos
+            límites no están confirmados, la respuesta indica la provincia y los municipios posibles
+            para que usted elija. No se consulta a Google ni a ningún otro proveedor de mapas o de
+            ubicación.
+          </p>
+          <p>
+            La respuesta contiene solo nombres y códigos de provincia y municipio, y la fuente de los
+            límites; no repite sus coordenadas. Con ella se rellena la búsqueda, y usted decide si
+            buscar.
+          </p>
+          <h3>Qué no se hace con sus coordenadas</h3>
+          <p>
+            El código del sitio no las escribe en archivos, bases de datos ni registros: se usan en
+            la memoria del servidor solo durante esa consulta.
+          </p>
+          <p>
+            No se guardan en su navegador, ni en cookies ni en ningún otro almacenamiento. No se
+            comparten con terceros ni se incluyen en las estadísticas.
+          </p>
+          <p>
+            Como con cualquier consulta al servidor, se usa también la dirección IP de la solicitud
+            para limitar el número de consultas (vea Dirección IP y límites de uso).
+          </p>
+
+          <h2>Búsqueda manual por ubicación</h2>
+          <p>
+            La búsqueda manual no usa la ubicación de su dispositivo: usted elige la provincia y el
+            municipio en las listas. Con la búsqueda manual el sitio no recibe coordenadas, solo lo
+            que usted eligió.
+          </p>
+          <p>
+            Al buscar, lo que eligió y escribió (provincia, municipio, área de práctica y texto)
+            viaja en la dirección de la página de resultados, por ejemplo
+            /abogados?provincia=santiago, y queda en el historial de su navegador como cualquier otra
+            página. El código del sitio no guarda esas búsquedas, y las estadísticas registran solo
+            la página visitada, sin los términos de búsqueda.
+          </p>
+
+          <h2>Estadísticas de uso</h2>
+          <p>
+            Para saber qué partes del directorio se usan, las páginas públicas envían al servidor de
+            este sitio un aviso breve que se suma a unos contadores diarios:
+          </p>
+          <ul>
+            <li>la página visitada (su ruta, sin los términos de búsqueda);</li>
+            <li>
+              si llegó desde otro sitio web, el nombre de ese sitio (solo el dominio, no la
+              dirección completa);
+            </li>
+            <li>
+              los clics en enlaces de contacto (teléfono, correo, WhatsApp o sitio web) y la página
+              donde se hicieron. Un clic cuenta como un intento: no sabemos si la llamada o el
+              mensaje llegó a producirse;
+            </li>
+            <li>
+              si en el futuro se activa la publicidad, hoy desactivada, las veces que se muestra y se
+              pulsa cada anuncio.
+            </li>
+          </ul>
+          <p>
+            Solo se guardan los totales por día, en archivos del servidor del directorio. No se usan
+            cookies ni identificadores, y no se guarda la dirección IP ni ningún otro dato que
+            identifique a quien visita. Hoy no hay un plazo de borrado automático para estos totales.
+          </p>
+
+          <h2>Asistente del directorio</h2>
+          <p>
+            El asistente responde con la información publicada del directorio. Su pregunta se envía
+            al servidor de este sitio (/api/chat), que la compara con esa información y devuelve un
+            texto ya publicado. No se usan servicios externos ni de inteligencia artificial.
+          </p>
+          <p>
+            El código del sitio no guarda ni registra las preguntas. La conversación existe solo en
+            la pestaña de su navegador y desaparece al cerrarla o recargarla. Por favor, no escriba
+            datos personales en el asistente.
+          </p>
+
+          <h2>Formulario de contacto</h2>
+          <p>
+            El formulario de la página de contactos pide nombre, correo electrónico, asunto y
+            mensaje. Todavía no está activo: no hay un canal configurado para recibir mensajes. Si lo
+            envía, el servidor de este sitio solo comprueba que los campos sean válidos y descarta el
+            contenido: no lo guarda, no lo reenvía a nadie y no lo registra.
+          </p>
+          <p>
+            Cuando el formulario se active, esta sección indicará quién recibe los mensajes, para qué
+            se usan y cuánto tiempo se conservan. Por favor, no incluya en él detalles de casos
+            legales, datos sensibles ni documentos.
+          </p>
+
+          <h2>Formulario de registro de abogados</h2>
+          <p>
+            El formulario de registro de abogados pide los datos de un perfil profesional: nombre,
+            presentación, áreas de práctica, formación, experiencia, idiomas, colegiatura, ubicación
+            de la oficina y medios de contacto, además de un correo electrónico para comunicarse con
+            el abogado y, si lo desea, una fotografía. Cada campo indica si aparecería en el perfil
+            público. La fotografía solo se mostraría en el perfil si el abogado lo autoriza
+            expresamente en el formulario y el equipo la aprueba al publicarlo; sin esa autorización
+            queda privada. No pide documentos de identidad, contraseñas, datos financieros ni
+            información de casos.
+          </p>
+          <p>
+            Todavía no está activo: no hay un lugar privado configurado para recibir solicitudes.
+            Mientras se completa, los datos y la fotografía quedan solo en su navegador (la vista
+            previa de la fotografía se genera en su dispositivo). Si lo envía, el servidor de este
+            sitio solo comprueba que los datos sean válidos, incluidos el tipo y el tamaño reales de
+            la fotografía, y los descarta: no los guarda, no los reenvía a nadie y no los registra.
+          </p>
+          <p>
+            Una solicitud nunca se publica por sí sola: se revisa en privado, el equipo puede pedir
+            cambios o rechazarla, y un perfil solo se publica cuando el equipo lo publica
+            expresamente. La colegiatura y la habilitación declaradas figuran como «No verificado»
+            hasta que se verifiquen. Cuando el formulario se active, esta sección indicará dónde se
+            guardan las solicitudes, quién las revisa y cuánto tiempo se conservan.
+          </p>
+
+          <h2>Formulario de registro de firmas</h2>
+          <p>
+            El formulario de registro de firmas pide los datos del perfil de una firma de abogados:
+            nombre, descripción, áreas de práctica, idiomas, oficina principal y medios de contacto
+            públicos, además del nombre de una persona de contacto, un correo para comunicarse con la
+            firma, los abogados que la integran y, si lo desea, hasta cuatro imágenes (logotipo,
+            portada, oficina e interior). Cada campo indica si aparecería en el perfil público. La
+            persona de contacto, el correo (salvo que se marque como visible), la lista de abogados y
+            la información adicional no se publican. Las imágenes solo se mostrarían si la firma lo
+            autoriza expresamente y el equipo las aprueba; sin esa autorización quedan privadas.
+          </p>
+          <p>
+            Funciona igual que el registro de abogados: mientras no haya un lugar privado configurado
+            para recibir solicitudes, el servidor solo comprueba los datos y los descarta. Una
+            solicitud nunca se publica por sí sola, y los abogados que nombra solo aparecen
+            vinculados a la firma cuando el equipo confirma sus perfiles publicados.
+          </p>
+
+          <h2>Dirección IP y límites de uso</h2>
+          <p>
+            Para evitar abusos, el servidor cuenta cuántas consultas recibe por minuto «Cerca de mí»,
+            el asistente, el formulario de contacto, los formularios de registro de abogados y de
+            firmas y las estadísticas, según la dirección IP de la solicitud (la que indique la
+            infraestructura del servidor). Ese recuento existe solo en la memoria del servidor: no se
+            escribe en archivos ni en registros, y se vacía al empezar cada nuevo periodo de un
+            minuto o al reiniciar el servidor. Si se supera el límite, la consulta se rechaza durante
+            un momento.
+          </p>
+
+          <h2>Cookies y servicios de terceros</h2>
+          <p>
+            El sitio no instala cookies y no guarda datos en el almacenamiento de su navegador.
+            Tampoco carga programas, mapas ni imágenes de otros sitios. Solo solicita las tipografías
+            a Google Fonts (fonts.googleapis.com y fonts.gstatic.com); esa solicitud comunica a
+            Google la dirección IP desde la que se visita el sitio.
+          </p>
+          <p>
+            Los enlaces de contacto de los perfiles abren otros servicios: su aplicación de teléfono
+            o de correo, WhatsApp o el sitio web del abogado o la firma. Al usarlos sale de este
+            directorio, y se aplican las prácticas de privacidad de esos servicios.
+          </p>
+
+          <h2>Perfiles de abogados y firmas</h2>
+          <p>
+            Hoy el directorio no tiene perfiles publicados. Cuando los tenga, cada perfil mostrará
+            solo información suministrada por el propio abogado o la propia firma, y un perfil solo
+            puede publicarse después de registrar la fecha en que el abogado o la firma aprobó su
+            contenido.
+          </p>
+          <p>Un perfil de abogado puede mostrar:</p>
+          <ul>
+            <li>
+              nombre, frase profesional, descripción y resumen de experiencia, áreas de práctica,
+              formación e idiomas;
+            </li>
+            <li>dirección de la oficina: calle, sector, municipio y provincia;</li>
+            <li>
+              teléfono, WhatsApp, correo electrónico, sitio web y un enlace a su perfil de empresa en
+              Google;
+            </li>
+            <li>una fotografía, solo si el abogado autorizó expresamente mostrarla;</li>
+            <li>las firmas a las que pertenece y otros abogados publicados de esas firmas;</li>
+            <li>
+              el estado de su colegiatura y habilitación, que solo se presenta como verificado cuando
+              constan el método y la fecha de la verificación.
+            </li>
+          </ul>
+          <p>
+            Una firma puede mostrar su nombre, frase, descripción, enfoque de trabajo, año de
+            fundación, idiomas, áreas de práctica, oficinas, datos de contacto, un enlace a su perfil
+            de empresa en Google, los abogados publicados que la integran (con la fotografía de sus
+            propios perfiles publicados) y su logotipo, imagen de portada y otras imágenes, solo si
+            la firma autorizó publicarlas. Las imágenes solo se sirven mientras el perfil que las usa
+            está publicado. No se publican la fecha de aprobación del perfil, las fechas de
+            autorización, el origen registrado de la dirección ni notas internas.
+          </p>
+          <p>
+            Las páginas de perfil incluyen esos mismos datos públicos en un formato que pueden leer
+            los buscadores. Mientras el sitio no esté abierto a buscadores, todas sus páginas indican
+            que no deben indexarse. El administrador del directorio puede corregir un perfil o
+            retirarlo de la vista pública en cualquier momento.
+          </p>
+
+          <h2>Aportaciones de abogados en las publicaciones</h2>
+          <p>
+            Un abogado con perfil publicado puede enviar al equipo, por un canal verificado (por
+            ejemplo, el correo privado de su solicitud), una perspectiva profesional sobre un
+            artículo del directorio. El equipo la registra en la administración, con el canal por el
+            que llegó y la fecha, y solo la publica si la aprueba expresamente.
+          </p>
+          <p>
+            Una aportación aprobada muestra, debajo del artículo, el nombre del abogado con un enlace
+            a su perfil publicado, el texto y la fecha de publicación. No se publican el canal, las
+            notas internas ni el historial de revisión. Deja de mostrarse si el equipo pide cambios o
+            la retira, si el abogado pide retirarla, si el artículo deja de estar publicado o si el
+            perfil del abogado deja de estarlo. El sitio no envía avisos automáticos sobre estas
+            decisiones. Todavía no hay un plazo de conservación definido para las aportaciones
+            registradas; se indicará en esta sección.
+          </p>
+
+          <h2>Datos de gestión interna</h2>
+          <p>
+            Para gestionar la relación con abogados, firmas y anunciantes, el administrador puede
+            guardar en el servidor del directorio datos de contacto, el estado de la relación y de la
+            membresía, fechas de seguimiento y notas internas. Estos datos no se muestran en páginas
+            públicas, y el panel de administración solo funciona en el equipo del administrador. El
+            directorio no procesa pagos ni guarda datos de pago.
+          </p>
+
+          <h2>Alojamiento del sitio</h2>
+          <p>
+            El sitio se aloja en GitHub Pages (GitHub, Inc.), que trata datos técnicos de las
+            conexiones, como la dirección IP, para entregar las páginas y puede conservar registros
+            de esas conexiones según sus propias políticas.
+          </p>
+
+          <h2>Sus opciones</h2>
+          <ul>
+            <li>
+              No compartir su ubicación. «Cerca de mí» es opcional: puede pulsar «Ahora no» o negar
+              el permiso cuando el navegador lo pida. La búsqueda manual funciona igual.
+            </li>
+            <li>
+              Retirar el permiso. Si lo concedió, puede retirarlo en la configuración de su navegador,
+              en los permisos de ubicación de este sitio. El sitio no puede activarlo por su cuenta.
+            </li>
+            <li>
+              Buscar a mano. Elija la provincia y el municipio en la barra de búsqueda de la página de
+              inicio o en la página de abogados.
+            </li>
+            <li>
+              Usar el asistente sin datos personales, o no usarlo: el resto del directorio funciona
+              sin él.
+            </li>
+          </ul>
+
+          <h2>Contacto</h2>
+          <p>
+            Todavía no hay publicado un medio de contacto para consultas de privacidad. Se indicará
+            en esta sección.
+          </p>
+
+          <h2>Cambios en esta política</h2>
+          <p>
+            Si cambian estas prácticas, actualizaremos esta página y su fecha de última
+            actualización.
+          </p>
         </div>
       </div>
     </main>
