@@ -342,6 +342,6 @@
 @media(max-width:520px){.legal-main{padding:40px 0 64px}.legal-lead{font-size:1rem}.legal-body{font-size:1rem}}
 @media(max-width:420px){.footer-legal{flex-direction:column;gap:12px}}
 /* Refund promise at the bottom of the reservation column */
-.reserve-copy>.reserve-refund{margin:18px 0 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem;font-weight:700;line-height:1.5;letter-spacing:.04em;color:var(--gold);text-align:right}
+.reserve-copy>.reserve-refund{margin:18px 0 0;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:.85rem;font-weight:700;line-height:1.5;letter-spacing:.04em;color:var(--gold);text-align:center}
 /* Copyright and city centred together instead of pushed to the edges */
 .footer-bottom{justify-content:center;gap:8px 32px;text-align:center}
