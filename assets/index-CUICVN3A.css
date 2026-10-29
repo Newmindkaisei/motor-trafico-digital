@@ -370,3 +370,7 @@
 
 /* Jump target for the Contactos nav item */
 #contactos{scroll-margin-top:96px}
+
+/* Contact card under the FAQ toggle */
+.faq-contact{margin:40px auto 0;max-width:620px}
+.faq-contact img{display:block;width:100%;height:auto;border-radius:16px}
