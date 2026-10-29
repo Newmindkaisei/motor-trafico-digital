@@ -367,3 +367,6 @@
 .statement-directory-img img{display:block;width:100%;height:auto}
 
 
+
+/* Jump target for the Contactos nav item */
+#contactos{scroll-margin-top:96px}
